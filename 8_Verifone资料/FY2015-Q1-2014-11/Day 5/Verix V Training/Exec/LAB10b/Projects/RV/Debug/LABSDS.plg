@@ -1,0 +1,112 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LABSDS - Win32 Debug--------------------
+</h3>
+
+
+Microsoft (R) Program Maintenance Utility   Version 6.00.8168.0
+Copyright (C) Microsoft Corp 1988-1998. All rights reserved.
+
+ C:\VerixVAps\VFSDK\bin\vrxcc -c -IC:\VerixVAps\VFSDK\include -IC:\VerixVAps\ACT2000\include -IC:\VerixVAps\TCPIP\include -IC:\VerixVAps\UCL\include  -DLOGSYS_FLAG ..\..\..\Source\LAB.c | "C:\VerixAps\Tools\fmterr.exe"
+"..\..\..\Source\LAB.c", line 163: Warning:  #550-D: variable "retVal" was set but never used
+   int retVal;
+       ^
+"..\..\..\Source\LAB.c", line 185: Warning:  #550-D: variable "retVal" was set but never used
+   int retVal;
+       ^
+"..\..\..\Source\LAB.c", line 186: Warning:  #177-D: variable "handle" was declared but never referenced
+   int handle = -1;
+       ^
+"..\..\..\Source\LAB.c", line 187: Warning:  #177-D: variable "dlStr" was declared but never referenced
+   char dlStr[20]="101";
+        ^
+"..\..\..\Source\LAB.c", line 207: Warning:  #550-D: variable "ret_val" was set but never used
+   int ret_val;
+       ^
+"..\..\..\Source\LAB.c", line 269: Warning:  #550-D: variable "ret_val" was set but never used
+      int ret_val;
+          ^
+"..\..\..\Source\LAB.c", line 304: Warning:  #550-D: variable "ret_val" was set but never used
+   int ret_val;
+       ^
+"..\..\..\Source\LAB.c", line 422: Warning:  #550-D: variable "retVal" was set but never used
+      int retVal;
+          ^
+"..\..\..\Source\LAB.c", line 566: Warning:  #550-D: variable "Val" was set but never used
+      int Val=0;
+          ^
+..\..\..\Source\LAB.c: 9 warnings, 0 errors
+ move LAB.o ..\..\..\obj
+ C:\VerixVAps\VFSDK\bin\vrxcc -c -IC:\VerixVAps\VFSDK\include -IC:\VerixVAps\ACT2000\include -IC:\VerixVAps\TCPIP\include -IC:\VerixVAps\UCL\include  -DLOGSYS_FLAG ..\..\..\Source\Sender.c | "C:\VerixAps\Tools\fmterr.exe"
+"..\..\..\Source\..\include\appobj.h", line 15: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+"..\..\..\Source\Sender.c", line 220: Warning:  #177-D: variable "i" was declared but never referenced
+      int i=0;
+          ^
+"..\..\..\Source\Sender.c", line 158: Warning:  #177-D: variable "nCount" was declared but never referenced
+   int nCount = 0 ;
+       ^
+"..\..\..\Source\Sender.c", line 162: Warning:  #177-D: variable "buff" was declared but never referenced
+   char buff[100]={0};
+        ^
+"..\..\..\Source\Sender.c", line 167: Warning:  #177-D: variable "response" was declared but never referenced
+   char response[15]={0};
+        ^
+"..\..\..\Source\Sender.c", line 311: Warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+    retVal = send(handle,TxBuffPkt,strlen((char*)TxBuffPkt),0);
+                         ^
+"..\..\..\Source\Sender.c", line 313: Warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+    retVal = sendto( handle, TxBuffPkt, strlen((char*)TxBuffPkt), 0, (struct sockaddr *)&socket_host, sizeof(socket_host)) ;
+                             ^
+"..\..\..\Source\Sender.c", line 326: Warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+     retVal = recv(handle,RxBuffPkt,szBufferLen[count]+1,0);
+                          ^
+"..\..\..\Source\Sender.c", line 332: Warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+     retVal = recvfrom( handle, RxBuffPkt, szBufferLen[count]+1, 0, (struct sockaddr *)&socket_host, &iServerLen ) ;
+                                ^
+"..\..\..\Source\Sender.c", line 301: Warning:  #177-D: variable "bufferLen" was declared but never referenced
+   short bufferLen = 3000;
+         ^
+"..\..\..\Source\Sender.c", line 303: Warning:  #550-D: variable "time" was set but never used
+   short time =0;
+         ^
+..\..\..\Source\Sender.c: 11 warnings, 0 errors
+ move Sender.o ..\..\..\obj
+ C:\VerixVAps\VFSDK\bin\vrxcc -c -IC:\VerixVAps\VFSDK\include -IC:\VerixVAps\ACT2000\include -IC:\VerixVAps\TCPIP\include -IC:\VerixVAps\UCL\include  -DLOGSYS_FLAG ..\..\..\Source\Appobj.c | "C:\VerixAps\Tools\fmterr.exe"
+"..\..\..\Source\..\include\appobj.h", line 15: Warning:  #1-D: last line of file ends without a newline
+  #endif
+        ^
+..\..\..\Source\Appobj.c: 1 warning, 0 errors
+ move Appobj.o ..\..\..\obj
+ C:\VerixVAps\VFSDK\bin\vrxcc ..\..\..\obj\LAB.o  ..\..\..\obj\sender.o  ..\..\..\obj\appobj.o C:\VerixVAps\ACT2000\output\RV\files\static\Debug\act2000.a  C:\VerixVAps\TCPIP\OutPut\RV\Files\Static\Debug\vtcpip.a  C:\VerixVAps\UCL\OutPut\RV\Files\Static\Debug\ucl.a -o LAB.out
+ move  LAB.out ..\..\..\output\RV\files\Debug
+ C:\VerixVAps\VFSDK\bin\vrxhdr -s 15000 -h 5000 ..\..\..\output\RV\files\Debug\LAB.out
+
+Magic        0xA3 (program)
+Flags        0x02 (Thumb)
+Version      1.0
+Code Addr    0x70420040
+Code Size    92828 (0x16A9C)
+Data Addr    0x70436C00
+Data Size    5476 (0x1564)
+Heap Size    5000 (0x1388)
+Stack Addr   0x7041C400
+Stack Size   15360 (0x3C00)
+Entry        0x70420085 (Thumb code)
+Library      .SYS.LIB
+ "C:\Program Files\VeriShield File Signing Tool\filesignature" .\LAB.fst -nogui
+ copy ..\..\..\output\RV\files\Debug\LAB.out.p7s ..\..\..\output\RV\files\Debug\signfile\ram\LAB.p7s
+已复制         1 个文件。
+ del ..\..\..\output\RV\files\Debug\LAB.out.p7s
+
+
+
+<h3>Results</h3>
+LABSDS.exe - 0 error(s), 21 warning(s)
+</pre>
+</body>
+</html>

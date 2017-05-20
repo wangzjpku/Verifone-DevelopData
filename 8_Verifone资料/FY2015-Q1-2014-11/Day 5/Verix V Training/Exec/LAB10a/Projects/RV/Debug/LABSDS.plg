@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LABSDS - Win32 Debug--------------------
+</h3>
+
+
+Microsoft (R) Program Maintenance Utility   Version 6.00.8168.0
+Copyright (C) Microsoft Corp 1988-1998. All rights reserved.
+
+ C:\VerixVAps\VFSDK\bin\vrxcc -c -IC:\VerixVAps\VFSDK\include -IC:\VerixVAps\ACT2000\include  -DLOGSYS_FLAG ..\..\..\Source\LAB.c | "C:\VerixAps\Tools\fmterr.exe"
+"..\..\..\Source\LAB.c", line 161: Warning:  #550-D: variable "retVal" was set but never used
+   int retVal;
+       ^
+"..\..\..\Source\LAB.c", line 224: Warning:  #550-D: variable "ret_val" was set but never used
+   int ret_val;
+       ^
+"..\..\..\Source\LAB.c", line 286: Warning:  #550-D: variable "ret_val" was set but never used
+      int ret_val;
+          ^
+"..\..\..\Source\LAB.c", line 321: Warning:  #550-D: variable "ret_val" was set but never used
+   int ret_val;
+       ^
+"..\..\..\Source\LAB.c", line 439: Warning:  #550-D: variable "retVal" was set but never used
+      int retVal;
+          ^
+"..\..\..\Source\LAB.c", line 583: Warning:  #550-D: variable "Val" was set but never used
+      int Val=0;
+          ^
+..\..\..\Source\LAB.c: 6 warnings, 0 errors
+ move LAB.o ..\..\..\obj
+ C:\VerixVAps\VFSDK\bin\vrxcc ..\..\..\obj\LAB.o C:\VerixVAps\ACT2000\output\RV\files\static\Debug\act2000.a -o LAB.out
+ move  LAB.out ..\..\..\output\RV\files\Debug
+ C:\VerixVAps\VFSDK\bin\vrxhdr -s 15000 -h 5000 ..\..\..\output\RV\files\Debug\LAB.out
+
+Magic        0xA3 (program)
+Flags        0x02 (Thumb)
+Version      1.0
+Code Addr    0x70420040
+Code Size    58408 (0xE428)
+Data Addr    0x7042E800
+Data Size    3368 (0xD28)
+Heap Size    5000 (0x1388)
+Stack Addr   0x7041C400
+Stack Size   15360 (0x3C00)
+Entry        0x70420085 (Thumb code)
+Library      .SYS.LIB
+ "C:\Program Files\VeriShield File Signing Tool\filesignature" .\LAB.fst -nogui
+ copy ..\..\..\output\RV\files\Debug\LAB.out.p7s ..\..\..\output\RV\files\Debug\signfile\ram\LAB.p7s
+已复制         1 个文件。
+ del ..\..\..\output\RV\files\Debug\LAB.out.p7s
+
+
+
+<h3>Results</h3>
+LABSDS.exe - 0 error(s), 6 warning(s)
+</pre>
+</body>
+</html>

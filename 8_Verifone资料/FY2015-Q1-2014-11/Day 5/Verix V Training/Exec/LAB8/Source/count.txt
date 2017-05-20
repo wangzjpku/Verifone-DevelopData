@@ -1,0 +1,10 @@
+/* Byte Addressing: 2 */
+
+#define	STARTMSG	1
+/*  "Enter Start Count" */
+
+#define	COUNTDOWN	2
+/*  "COUNTING DOWN" */
+
+#define	FINAL	3
+/*  "BLAST OFF" */

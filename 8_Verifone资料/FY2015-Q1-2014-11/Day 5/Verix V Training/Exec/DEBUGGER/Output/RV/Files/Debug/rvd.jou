@@ -1,0 +1,59 @@
+;;; JOURNAL FILE: rvd.jou
+; @I1 lab.out   _0:ARM-ARM-NW
+> journal on=rvd.jou
+> connect,route @Verix
+> connect "I1 lab.out   _0"
+> load/NI/R/NP/PD 'lab.axf'
+Loading file D:\VerixV training\Exec\DEBUGGER\Output\RV\Files\Debug\lab.axf...
+  Note: current instruction address unchanged.
+> bi \LAB\LAB_C\#37:0
+> go
+Stopped at 0x70420160 due to SW Instruction Breakpoint
+Stopped at 0x70420160: LAB\LAB_C\doCountDown Line 37
+> go
+Stopped at 0x70420160 due to SW Instruction Breakpoint
+Stopped at 0x70420160: LAB\LAB_C\doCountDown Line 37
+> go
+Stopped at 0x70420160 due to SW Instruction Breakpoint
+Stopped at 0x70420160: LAB\LAB_C\doCountDown Line 37
+> go
+Stopped at 0x70420160 due to SW Instruction Breakpoint
+Stopped at 0x70420160: LAB\LAB_C\doCountDown Line 37
+> go
+Stopped at 0x70420160 due to SW Instruction Breakpoint
+Stopped at 0x70420160: LAB\LAB_C\doCountDown Line 37
+> stepo
+> stepo
+> stepo
+> stepo
+> stepo
+> stepo
+> stepo
+Stopped at 0x70420160 due to SW Instruction Breakpoint
+Stopped at 0x70420160: LAB\LAB_C\doCountDown Line 37
+> stepo
+> stepo
+> stepo
+> stepo
+> stepo
+> stepo
+Stopped at 0x70420160 due to SW Instruction Breakpoint
+Stopped at 0x70420160: LAB\LAB_C\doCountDown Line 37
+> stepo
+> stepo
+> stepo
+> stepo
+> stepo
+> stepo
+Stopped at 0x70420160 due to SW Instruction Breakpoint
+Stopped at 0x70420160: LAB\LAB_C\doCountDown Line 37
+> stepo
+> stepo
+> go
+Stopped at 0x70420160 due to SW Instruction Breakpoint
+Stopped at 0x70420160: LAB\LAB_C\doCountDown Line 37
+> go
+Stopped at 0x70420160 due to SW Instruction Breakpoint
+Stopped at 0x70420160: LAB\LAB_C\doCountDown Line 37
+> go
+>  disconn,all

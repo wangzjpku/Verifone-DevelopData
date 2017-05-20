@@ -1,0 +1,13 @@
+01:1.21,\C\Wr_merchant
+04:"\NDATE:";15.42,r_date
+05:"ACCT NO:";15.42,r_acct_num
+06:"EXP DATE:";15.42,r_exp_date
+08:"\WAMOUNT  : $";11.19,\Rr_amount
+10:"\NCARD TYPE: VISA           TRANS TYPE: SALE"
+11:"\NAPP CODE:";12,r_response;27,"TRANS #: ";35,r_trans_num
+15:"Sign______________________________________"
+16&X00000001:"\N";1.42,\Cr_cardholder
+16&X00000002:"\N";1.42,\C"\CSIGNATURE"
+18:1.21,\W\C"THANK YOU\P"
+
+
